@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <h2>BMI Calculator</h2>
+    <div class="main">
+      <div class="box">
+        <input id="mass" type="number" placeholder="Enter your mass (kg)..." />
+        <!-- <p class="message">*message</p> -->
+
+        <input
+          id="height"
+          type="number"
+          placeholder="Enter your height (meter)..."
+        />
+        <p class="message">*message</p>
+        <button id="ok">OK</button>
+      </div>
+    </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="bmi">
+        Your BMI
+        <p id="score">234</p>
+      </h1>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
